@@ -1,0 +1,18 @@
+<h1>Name Generator</h1>
+
+<p *ngIf="!completenames"><em>Loading...</em></p>
+
+<table class='table' *ngIf="completenames">
+    <thead>
+        <tr>
+            <th>First Names</th>
+            <th>Last Names</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let completename of completenames">
+            <td>{{ completename.summary }}</td>
+            <td>{{completename.summary2}}</td>
+        </tr>
+    </tbody>
+</table>
